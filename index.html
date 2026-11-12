@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sabika GR — Escudería STEM Racing · Granada</title>
+<meta name="description" content="Sabika GR es la escudería del IES Blas Infante de Ogíjares (Granada). Diseñamos y fabricamos un Fórmula 1 en miniatura para competir en STEM Racing.">
+<meta name="theme-color" content="#080605">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sabika GR — Escudería STEM Racing">
+<meta property="og:description" content="Nacidos en Granada. Hechos para competir. Un Fórmula 1 en miniatura diseñado por estudiantes.">
+<meta property="og:image" content="assets/img/og.jpg">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="assets/img/logo.webp">
+<link rel="preload" href="assets/fonts/Sora-normal-300-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Manrope-normal-300-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/InstrumentSerif-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/img/car-hero.webp" as="image">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Saltar al contenido</a>
+<div class="scroll-progress" aria-hidden="true"><span id="scrollBar"></span></div>
+
+<!-- Icon sprite -->
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-star" viewBox="0 0 24 24">
+    <path d="M12 1.5 14.6 7.2 20.5 6.1 17.7 11.4 22 15.7 16.1 16.8 15 22.5 12 18.1 9 22.5 7.9 16.8 2 15.7 6.3 11.4 3.5 6.1 9.4 7.2Z"/>
+  </symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24">
+    <path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-check" viewBox="0 0 24 24">
+    <path d="m4.5 12.5 5 5L19.5 7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24">
+    <rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <path d="m4.5 7.5 7.5 6 7.5-6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24">
+    <rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5.2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24">
+    <rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M15.5 5.5v-.8A2.2 2.2 0 0 0 13.3 2.5H6.7A2.2 2.2 0 0 0 4.5 4.7v6.6a2.2 2.2 0 0 0 2.2 2.2h.8" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  </symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24">
+    <path d="M12 21s6.5-6.1 6.5-11A6.5 6.5 0 0 0 5.5 10c0 4.9 6.5 11 6.5 11Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <circle cx="12" cy="10" r="2.4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  </symbol>
+  <symbol id="i-cap" viewBox="0 0 64 64">
+    <path d="M12 39a20 20 0 0 1 40 0" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M12 39h32c5.5 0 9.5 1.4 9.5 3.6 0 2.1-4 3.7-9.5 3.7H12Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+    <path d="M32 19v20M25 21.5a17 17 0 0 1 14 0" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+    <circle cx="32" cy="39" r="1.6" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-polo" viewBox="0 0 64 64">
+    <path d="M24 12 14 18l-4 11 7 4 3-6v23a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V27l3 6 7-4-4-11-10-6-6 5h-2Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+    <path d="M25 12c0 4 3 6 7 6s7-2 7-6" fill="none" stroke="currentColor" stroke-width="2.2"/>
+  </symbol>
+  <symbol id="i-bracelet" viewBox="0 0 64 64">
+    <circle cx="32" cy="28" r="16" fill="none" stroke="currentColor" stroke-width="2.2"/>
+    <circle cx="32" cy="28" r="11.5" fill="none" stroke="currentColor" stroke-width="1" opacity=".45"/>
+    <path d="M32 44v4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M32 47 34.1 52.1 39.6 52.6 35.4 56.3 36.7 61.7 32 58.8 27.3 61.7 28.6 56.3 24.4 52.6 29.9 52.1Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-pinbadge" viewBox="0 0 64 64">
+    <circle cx="32" cy="32" r="21" fill="none" stroke="currentColor" stroke-width="2.2"/>
+    <circle cx="32" cy="32" r="16.5" fill="none" stroke="currentColor" stroke-width="1" opacity=".5" stroke-dasharray="2 4"/>
+    <path d="M32 19.5 34.7 26l7 .7-5.2 4.5 1.6 6.9L32 34.5l-6.1 3.6 1.6-6.9-5.2-4.5 7-.7Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-users" viewBox="0 0 24 24">
+    <circle cx="9" cy="8.5" r="3.3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M2.8 19.5c0-3.4 2.8-5.7 6.2-5.7s6.2 2.3 6.2 5.7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M16.2 5.6a3.2 3.2 0 0 1 0 6.2M17.5 14.3c2.2.4 3.9 2.2 3.9 4.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-town" viewBox="0 0 24 24">
+    <path d="M3 20.5h18M5 20.5V9l5-3 5 3v11.5M15 20.5V12h4v8.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M8 11.5h1.5M8 15h1.5M12 11.5h1.5M12 15h1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24">
+    <path d="M8 4h8v5a4 4 0 0 1-8 0V4Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M8 5.5H4.5V8a4 4 0 0 0 4 4M16 5.5h3.5V8a4 4 0 0 1-4 4M12 13v5M8.5 21h7M9.5 18.5h5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24">
+    <path d="M12 2v6M12 16v6M2 12h6M16 12h6M5 5l4 4M15 15l4 4M19 5l-4 4M9 15l-4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24">
+    <path d="M4 8h16M4 16h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-close" viewBox="0 0 24 24">
+    <path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-copycheck" viewBox="0 0 24 24">
+    <path d="m5 12.5 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+</svg>
+
+<!-- Ambient background -->
+<div class="ambient" aria-hidden="true">
+  <span class="blob blob-a"></span>
+  <span class="blob blob-b"></span>
+  <span class="blob blob-c"></span>
+  <span class="grid-lines"></span>
+  <span class="vignette"></span>
+</div>
+
+<header class="site-header">
+  <div class="nav glass" id="siteNav">
+    <a class="brand" href="#inicio" aria-label="Sabika GR, volver al inicio">
+      <img class="brand-mark" src="assets/img/logo-white.webp" alt="" width="256" height="265">
+      <span class="brand-divider" aria-hidden="true"></span>
+      <img class="brand-word" src="assets/img/wordmark-white.webp" alt="Sabika GR" width="1400" height="201">
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+      <a href="#proyecto" class="nav-link">Proyecto</a>
+      <a href="#origen" class="nav-link">Origen</a>
+      <a href="#objetivos" class="nav-link">Objetivos</a>
+      <a href="#merchandising" class="nav-link">Merch</a>
+      <a href="#plan" class="nav-link">Plan</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
+      <a href="#patrocinio" class="nav-cta">Patrocina <svg class="icon"><use href="#i-arrow"/></svg></a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menú">
+      <svg class="icon icon-menu"><use href="#i-menu"/></svg>
+      <svg class="icon icon-close"><use href="#i-close"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="inicio">
+    <div class="hero-watermark" aria-hidden="true">
+      <img src="assets/img/logo.webp" alt="" width="640" height="663">
+    </div>
+
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow reveal"><span class="status-dot" aria-hidden="true"></span> Escudería STEM Racing · Granada</p>
+
+        <h1 class="reveal">Nacidos en <em>Granada.</em><br>Hechos para competir.</h1>
+
+        <p class="lead reveal">Somos <strong>Sabika GR</strong>, la escudería del IES Blas Infante. Diseñamos, fabricamos y llevamos a la pista un Fórmula&nbsp;1 en miniatura para competir en la mayor competición educativa del mundo.</p>
+
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="#proyecto">Conoce el proyecto <svg class="icon"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-ghost" href="#patrocinio">Hazte patrocinador</a>
+        </div>
+
+        <ul class="hero-tags reveal" aria-label="Áreas del proyecto">
+          <li>Ingeniería</li>
+          <li>Diseño</li>
+          <li>Marketing</li>
+          <li>Competición</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-ring" aria-hidden="true"></div>
+        <div class="hero-glow" aria-hidden="true"></div>
+
+        <figure class="hero-frame glass" data-tilt>
+          <div class="hero-frame-inner">
+            <img class="hero-car" src="assets/img/car-hero.webp" alt="Prototipo de Fórmula 1 en miniatura del equipo Sabika GR sobre el asfalto" width="640" height="964">
+            <div class="frame-shade" aria-hidden="true"></div>
+
+            <span class="frame-tag"><span class="status-dot" aria-hidden="true"></span> Prototipo Sabika GR</span>
+
+            <figcaption class="frame-footer">
+              <div>
+                <span class="micro">Diseño &amp; fabricación</span>
+                <strong>IES Blas Infante</strong>
+              </div>
+              <span class="frame-num" aria-hidden="true">01</span>
+            </figcaption>
+          </div>
+        </figure>
+
+        <div class="float-chip chip-a glass" aria-hidden="true">
+          <span class="micro">Competición</span>
+          <strong>STEM Racing</strong>
+        </div>
+        <div class="float-chip chip-b glass" aria-hidden="true">
+          <span class="micro">Origen</span>
+          <strong>Granada · ES</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap scroll-cue" aria-hidden="true">
+      <span>Desliza</span>
+      <span class="scroll-line"><i></i></span>
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="stats-wrap" aria-label="El proyecto en cifras">
+    <div class="wrap">
+      <div class="stats-band glass reveal">
+        <div class="stat">
+          <strong>01</strong>
+          <span class="stat-label">Prototipo</span>
+          <p>Un Fórmula 1 en miniatura diseñado y fabricado por el equipo.</p>
+        </div>
+        <div class="stat">
+          <strong>04</strong>
+          <span class="stat-label">Departamentos</span>
+          <p>Ingeniería, diseño, marketing y finanzas trabajando como una escudería.</p>
+        </div>
+        <div class="stat">
+          <strong>02</strong>
+          <span class="stat-label">Ciudades</span>
+          <p>Jornadas de prueba en Málaga y competición oficial en Jerez.</p>
+        </div>
+        <div class="stat">
+          <strong>100<small>%</small></strong>
+          <span class="stat-label">Equipo</span>
+          <p>Trabajo, esfuerzo y compañerismo detrás de cada pieza.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Diseño 3D</span><svg class="icon"><use href="#i-star"/></svg>
+      <span>Aerodinámica</span><svg class="icon"><use href="#i-star"/></svg>
+      <span>Fabricación</span><svg class="icon"><use href="#i-star"/></svg>
+      <span>Marketing</span><svg class="icon"><use href="#i-star"/></svg>
+      <span>Patrocinio</span><svg class="icon"><use href="#i-star"/></svg>
+      <span>Trabajo en equipo</span><svg class="icon"><use href="#i-star"/></svg>
+      <span>Diseño 3D</span><svg class="icon"><use href="#i-star"/></svg>
+      <span>Aerodinámica</span><svg class="icon"><use href="#i-star"/></svg>
+      <span>Fabricación</span><svg class="icon"><use href="#i-star"/></svg>
+      <span>Marketing</span><svg class="icon"><use href="#i-star"/></svg>
+      <span>Patrocinio</span><svg class="icon"><use href="#i-star"/></svg>
+      <span>Trabajo en equipo</span><svg class="icon"><use href="#i-star"/></svg>
+    </div>
+  </div>
+
+  <!-- ============ PROYECTO ============ -->
+  <section class="section" id="proyecto">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="kicker reveal"><span>01</span> El proyecto</p>
+        <h2 class="reveal">Una escudería real,<br><em>en miniatura.</em></h2>
+        <p class="section-lead reveal">STEM Racing es la mayor competición educativa del mundo. Utiliza el automovilismo para inspirar vocaciones en ciencia, tecnología, ingeniería y matemáticas. Cada equipo funciona como una escudería profesional: ingeniería, marketing, finanzas, comunicación y patrocinio.</p>
+      </header>
+
+      <div class="project-grid">
+        <figure class="media-card glass reveal" data-tilt>
+          <img src="assets/img/grid-aerial.webp" alt="Monoplazas de competición vistos desde arriba en la parrilla de salida" width="736" height="1163" loading="lazy" decoding="async">
+          <div class="media-shade" aria-hidden="true"></div>
+          <figcaption class="media-caption">
+            <span class="micro">En pista</span>
+            <p>Un proyecto que se construye como un equipo de Fórmula 1.</p>
+          </figcaption>
+          <span class="media-corner" aria-hidden="true">SGR</span>
+        </figure>
+
+        <div class="dept-grid">
+          <article class="dept glass reveal">
+            <div class="dept-top">
+              <span class="dept-icon"><svg class="icon"><use href="#i-spark"/></svg></span>
+              <span class="micro">01</span>
+            </div>
+            <h3>Ingeniería</h3>
+            <p>Diseño, simulación y fabricación del prototipo. Cada milímetro cuenta.</p>
+          </article>
+
+          <article class="dept glass reveal">
+            <div class="dept-top">
+              <span class="dept-icon"><svg class="icon"><use href="#i-star"/></svg></span>
+              <span class="micro">02</span>
+            </div>
+            <h3>Diseño</h3>
+            <p>Identidad, materiales y presentación del equipo ante el jurado.</p>
+          </article>
+
+          <article class="dept glass reveal">
+            <div class="dept-top">
+              <span class="dept-icon"><svg class="icon"><use href="#i-trophy"/></svg></span>
+              <span class="micro">03</span>
+            </div>
+            <h3>Finanzas</h3>
+            <p>Presupuesto, patrocinios y viabilidad de cada decisión del proyecto.</p>
+          </article>
+
+          <article class="dept glass reveal">
+            <div class="dept-top">
+              <span class="dept-icon"><svg class="icon"><use href="#i-users"/></svg></span>
+              <span class="micro">04</span>
+            </div>
+            <h3>Comunicación</h3>
+            <p>Redes, merchandising y la relación con quienes hacen posible el viaje.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ORIGEN ============ -->
+  <section class="section origin" id="origen">
+    <div class="wrap origin-grid">
+      <div class="origin-media reveal">
+        <figure class="origin-photo">
+          <img src="assets/img/alhambra.webp" alt="La Alhambra de Granada sobre la colina de la Sabika" width="900" height="675" loading="lazy" decoding="async">
+          <div class="photo-shade" aria-hidden="true"></div>
+        </figure>
+        <div class="origin-badge glass">
+          <svg class="icon"><use href="#i-star"/></svg>
+          <div>
+            <span class="micro">El nombre</span>
+            <strong>Sabika</strong>
+            <p>La colina de la Alhambra</p>
+          </div>
+        </div>
+        <div class="origin-star" aria-hidden="true">
+          <svg viewBox="0 0 100 100"><path d="M50 2 61 30 89 20 78 48 98 50 78 52 89 80 61 70 50 98 39 70 11 80 22 52 2 50 22 48 11 20 39 30Z" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+        </div>
+      </div>
+
+      <div class="origin-copy">
+        <p class="kicker reveal"><span>02</span> Nuestro nombre</p>
+        <h2 class="reveal">Sabika: la colina que <em>nos nombra.</em></h2>
+        <p class="section-lead reveal">Sabika es la colina sobre la que se asienta la Alhambra. Elegimos su nombre para llevar Granada con nosotros allá donde competimos.</p>
+        <p class="reveal origin-p">Nuestro diseñador gráfico y el equipo de marketing trasladaron dos símbolos nazaríes al lenguaje de la competición: la estrella de ocho puntas y el león de la Fuente de los Leones. El resultado es un escudo con acento andaluz y alma de paddock.</p>
+
+        <ul class="origin-list">
+          <li class="reveal">
+            <span class="origin-num">A</span>
+            <div>
+              <strong>Estrella nazarí</strong>
+              <p>Geometría de ocho puntas tomada de la Alhambra.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="origin-num">B</span>
+            <div>
+              <strong>El león de la Alhambra</strong>
+              <p>Fuerza y carácter en el centro del escudo.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="origin-num">C</span>
+            <div>
+              <strong>Terracota y arena</strong>
+              <p>Los colores de la piedra, el sol y la tierra de Granada.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OBJETIVOS ============ -->
+  <section class="section" id="objetivos">
+    <div class="wrap">
+      <header class="section-head section-head--row">
+        <div>
+          <p class="kicker reveal"><span>03</span> Objetivos</p>
+          <h2 class="reveal">Cuatro objetivos.<br><em>Una misma meta.</em></h2>
+        </div>
+        <p class="section-lead reveal">Competir al más alto nivel sin perder lo que nos trajo hasta aquí: aprender, trabajar en equipo y disfrutar del camino.</p>
+      </header>
+
+      <div class="obj-grid">
+        <article class="obj glass reveal">
+          <span class="obj-num" aria-hidden="true">01</span>
+          <span class="obj-icon"><svg class="icon"><use href="#i-trophy"/></svg></span>
+          <h3>Conseguir patrocinio</h3>
+          <p>Encontrar patrocinadores que apoyen a la escudería con aportaciones y hagan posible el viaje.</p>
+          <span class="obj-meta">Sostenibilidad</span>
+        </article>
+
+        <article class="obj glass reveal">
+          <span class="obj-num" aria-hidden="true">02</span>
+          <span class="obj-icon"><svg class="icon"><use href="#i-users"/></svg></span>
+          <h3>Aprender como equipo</h3>
+          <p>Desarrollar actitudes de trabajo en equipo y adquirir conocimientos de ingeniería, diseño y fabricación.</p>
+          <span class="obj-meta">Aprendizaje</span>
+        </article>
+
+        <article class="obj glass reveal">
+          <span class="obj-num" aria-hidden="true">03</span>
+          <span class="obj-icon"><svg class="icon"><use href="#i-spark"/></svg></span>
+          <h3>Ser competitivos</h3>
+          <p>Preparar el prototipo y la presentación para llegar a la fase final de la competición.</p>
+          <span class="obj-meta">Rendimiento</span>
+        </article>
+
+        <article class="obj glass reveal">
+          <span class="obj-num" aria-hidden="true">04</span>
+          <span class="obj-icon"><svg class="icon"><use href="#i-star"/></svg></span>
+          <h3>Disfrutar la experiencia</h3>
+          <p>Aprender y disfrutar de una experiencia única que marcará nuestro paso por el instituto.</p>
+          <span class="obj-meta">Equipo</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BENEFICIOS ============ -->
+  <section class="section benefits" id="beneficios">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="kicker reveal"><span>04</span> Justificación y beneficios</p>
+        <h2 class="reveal">Lo que este proyecto<br><em>deja atrás.</em></h2>
+      </header>
+
+      <div class="benefit-grid">
+        <article class="benefit glass reveal">
+          <div class="benefit-head">
+            <span class="benefit-icon"><svg class="icon"><use href="#i-users"/></svg></span>
+            <span class="micro">Estudiantes</span>
+          </div>
+          <h3>Crecer haciendo.</h3>
+          <p>El proyecto fomenta valores de esfuerzo y compañerismo. Aprendemos a trabajar en equipo, a repartir responsabilidades y a tomar decisiones con criterio.</p>
+          <ul class="tag-list">
+            <li>Esfuerzo</li>
+            <li>Compañerismo</li>
+            <li>Decisiones</li>
+            <li>STEM</li>
+          </ul>
+          <span class="benefit-glow" aria-hidden="true"></span>
+        </article>
+
+        <article class="benefit glass reveal">
+          <div class="benefit-head">
+            <span class="benefit-icon"><svg class="icon"><use href="#i-town"/></svg></span>
+            <span class="micro">Ogíjares</span>
+          </div>
+          <h3>Representar al municipio.</h3>
+          <p>Damos visibilidad positiva al pueblo y dejamos claro que Ogíjares apuesta por colaborar en proyectos de educación, ciencia e innovación.</p>
+          <ul class="tag-list">
+            <li>Educación</li>
+            <li>Innovación</li>
+            <li>Orgullo local</li>
+          </ul>
+          <span class="benefit-glow" aria-hidden="true"></span>
+        </article>
+      </div>
+
+      <div class="quote-band glass reveal">
+        <svg class="icon quote-star" aria-hidden="true"><use href="#i-star"/></svg>
+        <blockquote>
+          <p>«Un proyecto que pone a Ogíjares y a su talento joven en el mapa.»</p>
+          <footer>Sabika GR · IES Blas Infante</footer>
+        </blockquote>
+        <a class="quote-link" href="#patrocinio">Súmate al proyecto <svg class="icon"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MERCHANDISING ============ -->
+  <section class="section merch" id="merchandising">
+    <div class="wrap">
+      <header class="section-head section-head--row">
+        <div>
+          <p class="kicker reveal"><span>05</span> Merchandising</p>
+          <h2 class="reveal">Identidad que<br><em>se lleva puesta.</em></h2>
+        </div>
+        <p class="section-lead reveal">Diseñamos y fabricamos productos del equipo para promocionar el proyecto y recaudar fondos para la competición.</p>
+      </header>
+
+      <div class="merch-grid">
+        <article class="product glass reveal" data-tilt>
+          <div class="product-visual">
+            <span class="product-halo" aria-hidden="true"></span>
+            <svg class="product-icon"><use href="#i-cap"/></svg>
+          </div>
+          <div class="product-info">
+            <span class="micro">Edición escudería</span>
+            <h3>Gorras</h3>
+            <p>El escudo, bordado para la grada.</p>
+          </div>
+          <span class="product-index" aria-hidden="true">01</span>
+        </article>
+
+        <article class="product glass reveal" data-tilt>
+          <div class="product-visual">
+            <span class="product-halo" aria-hidden="true"></span>
+            <svg class="product-icon"><use href="#i-polo"/></svg>
+          </div>
+          <div class="product-info">
+            <span class="micro">Edición escudería</span>
+            <h3>Polos</h3>
+            <p>El uniforme oficial del equipo.</p>
+          </div>
+          <span class="product-index" aria-hidden="true">02</span>
+        </article>
+
+        <article class="product glass reveal" data-tilt>
+          <div class="product-visual">
+            <span class="product-halo" aria-hidden="true"></span>
+            <svg class="product-icon"><use href="#i-bracelet"/></svg>
+          </div>
+          <div class="product-info">
+            <span class="micro">Edición escudería</span>
+            <h3>Pulseras</h3>
+            <p>Granada en la muñeca.</p>
+          </div>
+          <span class="product-index" aria-hidden="true">03</span>
+        </article>
+
+        <article class="product glass reveal" data-tilt>
+          <div class="product-visual">
+            <span class="product-halo" aria-hidden="true"></span>
+            <svg class="product-icon"><use href="#i-pinbadge"/></svg>
+          </div>
+          <div class="product-info">
+            <span class="micro">Edición escudería</span>
+            <h3>Chapas</h3>
+            <p>El león, en formato bolsillo.</p>
+          </div>
+          <span class="product-index" aria-hidden="true">04</span>
+        </article>
+      </div>
+
+      <div class="merch-note glass reveal">
+        <p><strong>Cada pieza cuenta.</strong> Lo recaudado con el merchandising se destina a la preparación del prototipo y al viaje de la competición.</p>
+        <a class="btn btn-ghost btn-sm" href="#contacto">Reserva la tuya <svg class="icon"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PLAN ============ -->
+  <section class="section plan" id="plan">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="kicker reveal"><span>06</span> Plan de acción y recursos</p>
+        <h2 class="reveal">De Granada<br><em>a la parrilla.</em></h2>
+        <p class="section-lead reveal">Tres paradas. Un prototipo. Un equipo. Así es el camino hasta la competición oficial.</p>
+      </header>
+
+      <div class="plan-grid">
+        <div class="plan-step reveal">
+          <div class="plan-node"><span>01</span></div>
+          <div class="plan-card glass">
+            <span class="micro">Origen</span>
+            <h3>Granada</h3>
+            <p>Diseño, fabricación y puesta a punto del prototipo en el IES Blas Infante.</p>
+            <span class="plan-tag">Preparación</span>
+          </div>
+        </div>
+
+        <div class="plan-step reveal">
+          <div class="plan-node"><span>02</span></div>
+          <div class="plan-card glass">
+            <span class="micro">Jornadas de prueba</span>
+            <h3>Málaga</h3>
+            <p>Viaje de ida y vuelta para las jornadas de prueba. Necesitamos cubrir el desplazamiento.</p>
+            <span class="plan-tag">Test</span>
+          </div>
+        </div>
+
+        <div class="plan-step reveal">
+          <div class="plan-node"><span>03</span></div>
+          <div class="plan-card glass">
+            <span class="micro">Competición oficial</span>
+            <h3>Jerez de la Frontera</h3>
+            <p>La cita decisiva en Cádiz. Viajan los participantes del equipo.</p>
+            <span class="plan-tag">Final</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="plan-callout glass reveal">
+        <div class="plan-callout-icon"><svg class="icon"><use href="#i-trophy"/></svg></div>
+        <div class="plan-callout-copy">
+          <h3>Buscamos un presupuesto para el viaje.</h3>
+          <p>Granada · Málaga · Jerez. Tu empresa puede ser el empujón que nos lleve a la fase final.</p>
+        </div>
+        <a class="btn btn-primary" href="#patrocinio">Quiero ayudar <svg class="icon"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PATROCINIO ============ -->
+  <section class="section sponsor" id="patrocinio">
+    <div class="wrap">
+      <div class="sponsor-panel glass reveal">
+        <img class="sponsor-bg" src="assets/img/car-track.webp" alt="" width="1259" height="840" loading="lazy" decoding="async">
+        <div class="sponsor-shade" aria-hidden="true"></div>
+
+        <div class="sponsor-content">
+          <p class="kicker kicker--light"><span>07</span> Patrocinio</p>
+          <h2>Tu marca,<br><em>en nuestra parrilla.</em></h2>
+          <p class="section-lead">Sé el embajador de nuestro proyecto. Lleva nuestro distintivo y forma parte de una historia de ingeniería, educación y orgullo local.</p>
+
+          <ul class="sponsor-list">
+            <li><span><svg class="icon"><use href="#i-check"/></svg></span> Tu marca como embajadora del proyecto</li>
+            <li><span><svg class="icon"><use href="#i-check"/></svg></span> Presencia en el prototipo y el merchandising</li>
+            <li><span><svg class="icon"><use href="#i-check"/></svg></span> Visibilidad en nuestros canales y materiales</li>
+            <li><span><svg class="icon"><use href="#i-check"/></svg></span> Vinculación directa con educación STEM en Granada</li>
+          </ul>
+
+          <div class="sponsor-actions">
+            <a class="btn btn-primary" href="mailto:18700803.sabikagr@g.educaand.es?subject=Patrocinio%20Sabika%20GR">Hablemos <svg class="icon"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-ghost" href="#contacto">Ver contacto</a>
+          </div>
+        </div>
+
+        <div class="sponsor-badge glass">
+          <svg class="icon"><use href="#i-star"/></svg>
+          <span>Embajador<br>del proyecto</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="section contact" id="contacto">
+    <div class="wrap contact-grid">
+      <div class="contact-copy">
+        <p class="kicker reveal"><span>08</span> Contacto</p>
+        <h2 class="reveal">Hablemos de la<br><em>próxima temporada.</em></h2>
+        <p class="section-lead reveal">¿Quieres patrocinar, colaborar o saber más del proyecto? Escríbenos. Respondemos rápido y con muchas ganas.</p>
+
+        <div class="contact-actions reveal">
+          <a class="contact-line" href="mailto:18700803.sabikagr@g.educaand.es">
+            <span class="contact-line-icon"><svg class="icon"><use href="#i-mail"/></svg></span>
+            <span>
+              <span class="micro">Correo</span>
+              <strong>18700803.sabikagr@g.educaand.es</strong>
+            </span>
+            <svg class="icon contact-arrow"><use href="#i-arrow"/></svg>
+          </a>
+          <a class="contact-line" href="https://instagram.com/sabika.gr" target="_blank" rel="noopener">
+            <span class="contact-line-icon"><svg class="icon"><use href="#i-instagram"/></svg></span>
+            <span>
+              <span class="micro">Instagram</span>
+              <strong>@sabika.gr</strong>
+            </span>
+            <svg class="icon contact-arrow"><use href="#i-arrow"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <aside class="contact-card glass reveal" aria-label="Datos de contacto">
+        <div class="contact-card-head">
+          <img src="assets/img/logo.webp" alt="Escudo de Sabika GR" width="640" height="663" loading="lazy">
+          <div>
+            <span class="micro">Sabika GR</span>
+            <h3>Racing Team</h3>
+            <p>IES Blas Infante</p>
+          </div>
+        </div>
+
+        <dl class="contact-facts">
+          <div>
+            <dt><svg class="icon"><use href="#i-pin"/></svg> Ubicación</dt>
+            <dd>Ogíjares, Granada · España</dd>
+          </div>
+          <div>
+            <dt><svg class="icon"><use href="#i-trophy"/></svg> Competición</dt>
+            <dd>STEM Racing · Jerez de la Frontera</dd>
+          </div>
+          <div>
+            <dt><svg class="icon"><use href="#i-users"/></svg> Equipo</dt>
+            <dd>Departamentos de patrocinio, marketing, ingeniería y comercio</dd>
+          </div>
+        </dl>
+
+        <button class="copy-btn" id="copyEmail" type="button" data-email="18700803.sabikagr@g.educaand.es">
+          <svg class="icon"><use href="#i-copy"/></svg>
+          <span>Copiar correo</span>
+        </button>
+
+        <p class="contact-note">Disponibles para reuniones con empresas y entidades colaboradoras.</p>
+      </aside>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img class="footer-logo" src="assets/img/logo-text-white.webp" alt="Sabika GR Racing Team" width="969" height="913" loading="lazy">
+        <p>Ingeniería, ilusión y acento granadino.<br>Un Fórmula 1 en miniatura, hecho por estudiantes.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Navegación del pie">
+        <div>
+          <span class="micro">Explora</span>
+          <a href="#proyecto">Proyecto</a>
+          <a href="#origen">Origen</a>
+          <a href="#objetivos">Objetivos</a>
+          <a href="#beneficios">Beneficios</a>
+        </div>
+        <div>
+          <span class="micro">Únete</span>
+          <a href="#merchandising">Merchandising</a>
+          <a href="#plan">Plan</a>
+          <a href="#patrocinio">Patrocinio</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div>
+          <span class="micro">Síguenos</span>
+          <a href="https://instagram.com/sabika.gr" target="_blank" rel="noopener">Instagram</a>
+          <a href="mailto:18700803.sabikagr@g.educaand.es">Email</a>
+          <a href="https://www.stemracing.es" target="_blank" rel="noopener">STEM Racing</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year">2026</span> Sabika GR · IES Blas Infante. Todos los derechos reservados.</p>
+      <p class="footer-made">Diseñado con orgullo en Granada <svg class="icon"><use href="#i-star"/></svg></p>
+      <a class="footer-top-link" href="#inicio">Volver arriba <svg class="icon"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <svg class="icon"><use href="#i-copycheck"/></svg>
+  <span>Correo copiado al portapapeles</span>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
